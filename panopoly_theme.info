@@ -1,9 +1,11 @@
-name = Panopoly Radix Theme
+name = Panopoly Theme
 description = Helps with theming and provides many layouts.
 core = 7.x
 package = Panopoly
 php = 5.2.4
 project = panopoly_theme
-dependencies[] = image
+dependencies[] = panels
+scripts[] = js/panopoly-accordion.js
+stylesheets[all][] = css/panopoly-featured.css
+stylesheets[all][] = css/panopoly-accordian.css
 features[features_api][] = api:1
-stylesheets[all][] = css/panopoly_fonts.css

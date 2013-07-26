@@ -19,24 +19,6 @@ function panopoly_theme_ctools_plugin_directory($module, $plugin) {
 }
 
 /**
- * Implementation of hook_css_alter().
- */
-function panopoly_theme_css_alter(&$css) {
-  // Installs the jquery.ui themeroller theme to the theme.
-  if (isset($css['misc/ui/jquery.ui.theme.css'])) {
-    $css['misc/ui/jquery.ui.theme.css']['data'] = drupal_get_path('module', 'panopoly_theme') . '/css/panopoly-jquery-ui-theme.css';
-  }
-  
-  if (isset($css['misc/ui/jquery.ui.dialog.css'])) {
-    unset($css['misc/ui/jquery.ui.dialog.css']);
-  }
-  
-  if (isset($css['misc/ui/jquery.ui.tabs.css'])) {
-    unset($css['misc/ui/jquery.ui.tabs.css']);
-  }
-}
-
-/**
  * Implementation hook_theme_registry_alter()
  */
 function panopoly_theme_theme_registry_alter(&$theme_registry) {
@@ -47,20 +29,24 @@ function panopoly_theme_theme_registry_alter(&$theme_registry) {
 }
 
 /**
- * Helper function for re-ordering arrays (needed by theme_registry_alter)
- */
-function _panopoly_theme_insert_after_first_element(&$a, $element) {
-  if (is_array($a)) {
-    $first_element = array_shift($a);
-    array_unshift($a, $first_element, $element);
-  }
-}
-
-/**
 * Implements hook_entity_info_alter().
 */
 function panopoly_theme_entity_info_alter(&$entity_info) {
+
+  // Add featured view mode to nodes
   $entity_info['node']['view modes']['featured'] = array(
+    'label' => t('Featured'),
+    'custom settings' => TRUE,
+  );
+
+  // Add featured view mode to users
+  $entity_info['user']['view modes']['featured'] = array(
+    'label' => t('Featured'),
+    'custom settings' => TRUE,
+  );
+
+  // Add featured view mode to taxonomy
+  $entity_info['taxonomy_term']['view modes']['featured'] = array(
     'label' => t('Featured'),
     'custom settings' => TRUE,
   );
