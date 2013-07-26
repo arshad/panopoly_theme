@@ -16,8 +16,8 @@ libraries[respondjs][download][url] = https://github.com/scottjehl/Respond/tarba
 projects[responsive_bartik][version] = 1.0-beta2
 projects[responsive_bartik][type] = theme
 
-; projects[radix][version] = 1.x-dev
-; projects[radix][type] = theme
-; projects[radix][download][type] = git
-; projects[radix][download][revision] = b873330
-; projects[radix][download][branch] = 7.x-1.x
+projects[radix][version] = 2.x-dev
+projects[radix][type] = theme
+projects[radix][download][type] = git
+projects[radix][download][revision] = 7cc04d3
+projects[radix][download][branch] = 7.x-2.x
