@@ -19,5 +19,5 @@ projects[responsive_bartik][type] = theme
 projects[radix][version] = 2.x-dev
 projects[radix][type] = theme
 projects[radix][download][type] = git
-projects[radix][download][revision] = 7cc04d3
+projects[radix][download][revision] = 3e9af62
 projects[radix][download][branch] = 7.x-2.x
