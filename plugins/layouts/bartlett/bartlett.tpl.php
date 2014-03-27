@@ -17,7 +17,7 @@
         <?php print $content['sidebar']; ?>
       </div>
     </div>
-    
+
     <div class="bartlett-content-container bartlett-container span9">
       <div class="bartlett-column-content-region bartlett-content-header clearfix panel-panel row-fluid">
         <div class="bartlett-column-content-region-inner bartlett-content-header-inner panel-panel-inner span12">
@@ -37,7 +37,7 @@
           </div>
         </div>
       </div><!-- /.bartlett-content-container-column-container -->
-      
+
     </div><!-- /.bartlett-content-container -->
   </div>
 </div><!-- /.bartlett -->

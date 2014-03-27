@@ -1,6 +1,6 @@
 /**
  * @file
- * OA Whelan panel layout
+ * Whelan panel layout
 **/
 
 .whelan-container {
@@ -8,6 +8,7 @@
 }
 
 .whelan-column-content-region {
+  min-height: 1px;
   width: 25.532%;
   float: left;
 }

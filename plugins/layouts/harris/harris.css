@@ -1,6 +1,6 @@
 /**
  * @file
- * OA Harris panel layout
+ * Harris panel layout
 **/
 
 .harris-container {
@@ -8,6 +8,7 @@
 }
 
 .harris-column-content-region {
+  min-height: 1px;
   width: 25.532%;
   float: left;
 }

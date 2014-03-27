@@ -12,7 +12,7 @@
 
 <div class="panel-display selby-flipped clearfix container <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   <div class="row-fluid">
-    <div class="selby-flipped-content-container selby-flipped-container span9">
+    <div class="selby-flipped-content-container selby-flipped-container span8">
       <div class="selby-flipped-content-container-inner selby-flipped-container-inner">
       
         <div class="selby-flipped-column-content-region selby-flipped-content-header clearfix panel-panel row-fluid">
@@ -20,7 +20,7 @@
             <?php print $content['contentheader']; ?>
           </div>
         </div>
-        
+
         <div class="selby-flipped-content-container-column-container clearfix">
           <div class="selby-flipped-content-container-column-container-inner row-fluid">
             <div class="selby-flipped-column-content-region selby-flipped-content-column1 selby-flipped-column panel-panel span6">
@@ -35,17 +35,17 @@
             </div>
           </div>
         </div><!-- /.selby-flipped-content-container-column-container -->
-        
+
         <div class="selby-flipped-column-content-region selby-flipped-content-footer clearfix panel-panel row-fluid">
           <div class="selby-flipped-column-content-region-inner selby-flipped-content-footer-inner panel-panel-inner span12">
             <?php print $content['contentfooter']; ?>
           </div>
         </div>
-        
+
       </div>
     </div><!-- /.selby-flipped-content-container -->
-    
-    <div class="selby-flipped-sidebar selby-flipped-column-content-region selby-flipped-column selby-flipped-container panel-panel span3">
+
+    <div class="selby-flipped-sidebar selby-flipped-column-content-region selby-flipped-column selby-flipped-container panel-panel span4">
       <div class="selby-flipped-sidebar-inner selby-flipped-column-content-region-inner selby-flipped-column-inner selby-flipped-container-inner panel-panel-inner">
         <?php print $content['sidebar']; ?>
       </div>

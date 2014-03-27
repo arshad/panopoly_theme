@@ -1,6 +1,6 @@
 /**
  * @file
- * OA McCoppin panel layout
+ * McCoppin panel layout
 **/
 
 .mccoppin-container {
@@ -8,6 +8,7 @@
 }
 
 .mccoppin-column-content-region {
+  min-height: 1px;
   width: 34.043%;
   float: left;
 }

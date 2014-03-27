@@ -23,7 +23,7 @@
     <div class="webb-flipped-content-container span9">
       <div class="webb-flipped-content-container-inner row-fluid">
       
-        <div class="webb-flipped-column-content-region webb-flipped-content-header panel-panel row-fluid">
+        <div class="webb-flipped-column-content-region webb-flipped-content-header panel-panel clearfix row-fluid">
           <div class="webb-flipped-column-content-region-inner webb-flipped-content-header-inner panel-panel-inner span12">
             <?php print $content['contentheader']; ?>
           </div>
